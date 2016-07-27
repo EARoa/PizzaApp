@@ -14,6 +14,7 @@
 		10C614961D4928760020CE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C614941D4928760020CE49 /* LaunchScreen.storyboard */; };
 		10C6149E1D4929C10020CE49 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C6149D1D4929C10020CE49 /* pizza.png */; };
 		10C614A01D492AD10020CE49 /* PizzaLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6149F1D492AD10020CE49 /* PizzaLocations.swift */; };
+		10C614A41D493C5C0020CE49 /* PizzaAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C614A31D493C5C0020CE49 /* PizzaAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		10C614971D4928760020CE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C6149D1D4929C10020CE49 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza.png; path = ../../../Desktop/pizza.png; sourceTree = "<group>"; };
 		10C6149F1D492AD10020CE49 /* PizzaLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaLocations.swift; sourceTree = "<group>"; };
+		10C614A31D493C5C0020CE49 /* PizzaAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				10C614941D4928760020CE49 /* LaunchScreen.storyboard */,
 				10C614971D4928760020CE49 /* Info.plist */,
 				10C6149F1D492AD10020CE49 /* PizzaLocations.swift */,
+				10C614A31D493C5C0020CE49 /* PizzaAnnotationView.swift */,
 			);
 			path = PizzaApp;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C614A41D493C5C0020CE49 /* PizzaAnnotationView.swift in Sources */,
 				10C614A01D492AD10020CE49 /* PizzaLocations.swift in Sources */,
 				10C6148E1D4928760020CE49 /* ViewController.swift in Sources */,
 				10C6148C1D4928760020CE49 /* AppDelegate.swift in Sources */,
@@ -296,6 +300,7 @@
 				10C6149C1D4928760020CE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

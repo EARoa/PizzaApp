@@ -97,19 +97,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
                     
                     let region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 250, 250)
                     self.mapView.setRegion(region, animated: true)
-                    
-    
-                    
-
-                    
-                    
-                    
                 }
             }
         }
         
     }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        var pizzaAnnotationView = self.mapView.dequeueReusableAnnotationViewWithIdentifier("PizzaAnnotationView")
+        
+        if pizzaAnnotationView == nil {
+            pizzaAnnotationView = PizzaAnnotationView(annotation: annotation, reuseIdentifier: "PizzaAnnotationView")
+        }
+        
+        pizzaAnnotationView?.canShowCallout = true
+        
+        let pizzaImageView = UIImageView(image: UIImage(named: "pizza"))
 
+        return pizzaAnnotationView
+        
+    }
+    
     
     
     
