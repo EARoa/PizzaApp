@@ -117,7 +117,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDeleg
         
         pizzaAnnotationView?.canShowCallout = true
         
-        let pizzaImageView = UIImageView(image: UIImage(named: "pizza"))
+        let pizzaImageView = UIImageView(image: UIImage(contentsOfFile: "pizza"))
 
         return pizzaAnnotationView
         
